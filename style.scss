@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "FuturaDemiC";
+    font-weight: normal;
+    src: url("./assets/fonts/FuturaDemiC.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "FuturaBookC";
+    font-weight: normal;
+    src: url("./assets/fonts/FuturaBookC.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: gray;
+}
+
+.header {
+    height: 83px;
+    background: #131313;
+
+    .header_content {
+        height: 100%;
+        margin: 0 100px 0 83px;
+        padding: 24px 0 22px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        &--logo {
+            flex-grow: 1;
+            h1 {
+                margin: 0;
+                font-family: "FuturaDemiC", Courier, monospace;
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #E3B873;
+            }
+        }
+
+        .header_nav {
+            flex-grow: 2;
+    
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+    
+                a {
+                    font-family: "FuturaBookC", Courier, monospace;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+    
+                a:hover {
+                    color: #E3B873;
+                }
+            }
+        }
+
+        &--tel {
+            font-family: "FuturaDemiC", Courier, monospace;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration-line: underline;
+            color: #E3B873;
+            flex-grow: 1;
+            text-align: center;
+        }
+        
+        &--request_call {
+            width: 161px;
+            height: 37px;
+            
+            a {
+                display: block;
+                height: 100%;
+                font-family: "FuturaDemiC", Courier, monospace;
+                font-size: 13px;
+                line-height: 40px;
+                text-align: center;
+                background: #E3B873;
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+                border-radius: 2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background: none;
+                border: solid 1px white;
+            }
+        }
+    }
+}
+
+.banner {
+    height: 755px;
+    // background: #131313;
+    background: rgb(56, 134, 56);
+}
+
+.completed_projects {
+    height: 702px;
+    // background: #131313;
+    background: #643838;
+}
+
+.online_control {
+    height: 1103px;
+    background: rgb(32, 137, 141);
+}
+
+.types_of_repair {
+    height: 830px;
+    background: white;
+}
+
+.request_measuring {
+    height: 855px;
+    background: yellowgreen;
+}
+
+.fantasy_realization {
+    height: 1130px;
+    background: blanchedalmond;
+}
