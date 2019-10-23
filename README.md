@@ -1,1 +1,4 @@
 # repair-design-project
+
+This project is done using VS Code. 
+Scss files compiles into css files using Live Sass Compiler extension.
